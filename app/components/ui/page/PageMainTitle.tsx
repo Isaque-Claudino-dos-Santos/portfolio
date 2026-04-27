@@ -1,6 +1,7 @@
 import { usePersonalInfo } from "@/app/hooks/use-personal-info";
 import Badge from "../Badge";
 import { useSiteMetadata } from "@/app/hooks/use-site-metadata";
+import { Title } from "../Title";
 
 export function PageMainTitle() {
   const currentYear = new Date().getUTCFullYear();
@@ -17,11 +18,11 @@ export function PageMainTitle() {
       </div>
 
       <div className="relative">
-        <div className="absolute top-15 -left-5 h-20 w-90 rounded-full bg-black/20 backdrop-blur-xs" />
-        <div className="absolute -top-5 -right-10 h-20 w-65 rounded-full bg-black/20 backdrop-blur-xs" />
-        <h1 className="font-gelasio text-9xl font-bold uppercase">
+        <div className="absolute top-15 -left-5 hidden h-20 w-90 rounded-full bg-black/20 backdrop-blur-xs md:block" />
+        <div className="absolute -top-5 -right-10 hidden h-20 w-65 rounded-full bg-black/20 backdrop-blur-xs md:block" />
+        <Title className="font-gelasio text-4xl font-bold uppercase md:text-9xl">
           {pageTitle}
-        </h1>
+        </Title>
       </div>
 
       <div className="flex items-center gap-1 self-end">

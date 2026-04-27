@@ -11,7 +11,7 @@ export function PageContainer(props: PageContainerProps) {
   return (
     <div className="h-full">
       {withLateralDetails && <LateralDetail className="top-1/2 left-5" />}
-      <div className="px-20 h-full">{children}</div>
+      <div className="px-30 h-full">{children}</div>
       {withLateralDetails && <LateralDetail className="top-1/2 right-5" />}
     </div>
   );

@@ -8,7 +8,6 @@ import SkillsCard from "./components/SkillsCard";
 import { ThanksCard } from "./components/ThanksCard";
 import Card from "./components/ui/Card";
 import { ArcDetail } from "./components/ui/details/ArcDetail";
-import { LateralDetail } from "./components/ui/details/LateralDetail";
 import { Link } from "./components/ui/Link";
 import { NoiseBG } from "./components/ui/NoiseBG";
 import { PageContainer } from "./components/ui/page/PageContainer";
@@ -17,6 +16,8 @@ import { PageSubTitle } from "./components/ui/page/PageSubTitle";
 import PageTitle from "./components/ui/page/PageTitle";
 import { Section } from "./components/ui/page/Section";
 import { Title } from "./components/ui/Title";
+
+//TODO: Organizar em Paginas com trasição entre elas
 
 export default function Home() {
   return (
@@ -44,6 +45,13 @@ export default function Home() {
         <div className="flex h-72 w-full items-center justify-center">
           <PageTitle title="projetos" description="projetos pessoal" />
         </div>
+
+        {/* PROJETOS das Empresas que Fiz o Desenvolvimento */}
+        <Section
+          subTitle={{ title: "empresas",description: 'projeto em' }}
+        >
+
+        </Section>
 
         <div className="relative flex h-svh flex-col gap-5">
           <PageContainer>

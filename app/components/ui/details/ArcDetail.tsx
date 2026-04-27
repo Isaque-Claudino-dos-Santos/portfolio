@@ -9,7 +9,7 @@ export function ArcDetail(props: ArcDetailProps) {
   const { repeat, className } = props;
 
   return (
-    <div className={cn("absolute flex gap-2", className)}>
+    <div className={cn("absolute flex gap-2 text-xs", className)}>
       {repeat.map((type, i) => {
         return (
           <Badge

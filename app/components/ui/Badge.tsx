@@ -18,9 +18,9 @@ export default function Badge(props: BadgeProps) {
         outline: "border-2 border-foreground text-foreground",
       },
       size: {
-        xs: "min-w-5 min-h-5 text-xs",
+        xs: "min-w-3 min-h-3 text-xs md:min-w-5 md:min-h-5",
         base: "min-w-7 min-h-7 text-base",
-        lg: "min-w-10 min-h-10 text-lg",
+        lg: "lg:min-w-10 lg:min-h-10 text-lg min-w-5 min-h-5",
       },
     },
     defaultVariants: { type: "outline", size: "base", color: "light" },
