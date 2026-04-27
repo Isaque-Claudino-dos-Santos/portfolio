@@ -29,6 +29,16 @@ export default function Home() {
         <PageMainTitle />
       </div>
 
+      <Section container={{ withLateralDetails: false }}>
+        <div className="grid h-full grid-cols-[2fr_2fr_3fr] gap-5 py-10">
+          <PhotoSelfCard />
+          <ExperienceAndEducationsCard />
+          <SkillsCard />
+          <AboundMeCard />
+          <ContactCard />
+        </div>
+      </Section>
+
       <div className="relative px-5">
         <NoiseBG />
         <div className="flex h-72 w-full items-center justify-center">
@@ -37,10 +47,8 @@ export default function Home() {
 
         {/* PROJETOS das Empresas que Fiz o Desenvolvimento */}
         <Section
-          subTitle={{ title: "empresas",description: 'projeto em' }}
-        >
-
-        </Section>
+          subTitle={{ title: "empresas", description: "projeto em" }}
+        ></Section>
 
         <div className="relative flex h-svh flex-col gap-5">
           <PageContainer>
