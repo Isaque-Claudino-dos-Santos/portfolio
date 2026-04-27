@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Gelasio, Dancing_Script } from "next/font/google";
 import "./globals.css";
-import { NoiseBG } from "./components/ui/NoiseBG";
+import { NoiseBG } from "../components/ui/NoiseBG";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,8 +38,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} ${gelasio.variable} ${dancingScript.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col image-cover">
-        <NoiseBG />
+      <body className="min-h-full flex flex-col bg-repeat bg-[url(/noise.svg)]">
         {children}
       </body>
     </html>

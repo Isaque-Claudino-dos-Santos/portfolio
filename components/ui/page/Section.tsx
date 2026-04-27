@@ -14,8 +14,6 @@ export function Section(props: SectionProps) {
   const { children, subTitle, topTitle, container } = props;
   return (
     <section className="relative">
-      <NoiseBG />
-
       {topTitle && (
         <div className="flex h-72 w-full items-center justify-center">
           <PageTitle {...topTitle} />

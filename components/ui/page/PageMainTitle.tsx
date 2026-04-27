@@ -1,7 +1,7 @@
-import { usePersonalInfo } from "@/app/hooks/use-personal-info";
+import { useSiteMetadata } from "@/hooks/use-site-metadata";
 import Badge from "../Badge";
-import { useSiteMetadata } from "@/app/hooks/use-site-metadata";
 import { Title } from "../Title";
+import { usePersonalInfo } from "@/hooks/use-personal-info";
 
 export function PageMainTitle() {
   const currentYear = new Date().getUTCFullYear();

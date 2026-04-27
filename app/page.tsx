@@ -1,21 +1,21 @@
-import AboundMeCard from "./components/AboundMeCard";
-import ContactCard from "./components/ContactCard";
-import ExperienceAndEducationsCard from "./components/ExperienceAndEducationsCard";
-import { PacManGame } from "./components/PacManGame";
-import PhotoSelfCard from "./components/PhotoSelfCard";
-import { ProjectCard } from "./components/ProjectCard";
-import SkillsCard from "./components/SkillsCard";
-import { ThanksCard } from "./components/ThanksCard";
-import Card from "./components/ui/Card";
-import { ArcDetail } from "./components/ui/details/ArcDetail";
-import { Link } from "./components/ui/Link";
-import { NoiseBG } from "./components/ui/NoiseBG";
-import { PageContainer } from "./components/ui/page/PageContainer";
-import { PageMainTitle } from "./components/ui/page/PageMainTitle";
-import { PageSubTitle } from "./components/ui/page/PageSubTitle";
-import PageTitle from "./components/ui/page/PageTitle";
-import { Section } from "./components/ui/page/Section";
-import { Title } from "./components/ui/Title";
+import AboundMeCard from "../components/AboundMeCard";
+import ContactCard from "../components/ContactCard";
+import ExperienceAndEducationsCard from "../components/ExperienceAndEducationsCard";
+import { PacManGame } from "../components/PacManGame";
+import PhotoSelfCard from "../components/PhotoSelfCard";
+import { ProjectCard } from "../components/ProjectCard";
+import SkillsCard from "../components/SkillsCard";
+import { ThanksCard } from "../components/ThanksCard";
+import Card from "../components/ui/Card";
+import { ArcDetail } from "../components/ui/details/ArcDetail";
+import { Link } from "../components/ui/Link";
+import { NoiseBG } from "../components/ui/NoiseBG";
+import { PageContainer } from "../components/ui/page/PageContainer";
+import { PageMainTitle } from "../components/ui/page/PageMainTitle";
+import { PageSubTitle } from "../components/ui/page/PageSubTitle";
+import PageTitle from "../components/ui/page/PageTitle";
+import { Section } from "../components/ui/page/Section";
+import { Title } from "../components/ui/Title";
 
 //TODO: Organizar em Paginas com trasição entre elas
 
@@ -28,17 +28,6 @@ export default function Home() {
 
         <PageMainTitle />
       </div>
-
-      <Section container={{ withLateralDetails: false }}>
-        <div className="grid h-full grid-cols-[2fr_2fr_3fr] gap-5">
-          <NoiseBG />
-          <PhotoSelfCard />
-          <ExperienceAndEducationsCard />
-          <SkillsCard />
-          <AboundMeCard />
-          <ContactCard />
-        </div>
-      </Section>
 
       <div className="relative px-5">
         <NoiseBG />
