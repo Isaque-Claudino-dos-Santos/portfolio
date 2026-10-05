@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://isaque-claudino-dos-santos.github.io/portfolio/"),
   title: "Isaque dos Santos — Desenvolvedor Full-Stack",
   description:
-    "Isaque Claudino dos Santos é desenvolvedor full-stack em Colombo, Paraná. Conheça seus projetos, habilidades em PHP, Laravel, Node.js, React e TypeScript, e entre em contato.",
+    "Isaque Claudino dos Santos é desenvolvedor full-stack em Curitiba, Paraná. Conheça seus projetos, habilidades em PHP, Laravel, Node.js, React e TypeScript, e entre em contato.",
   keywords: [
     "Isaque Claudino dos Santos",
     "desenvolvedor full-stack",
     "desenvolvedor web",
-    "Colombo",
+    "Curitiba",
     "Paraná",
     "PHP",
     "Laravel",
@@ -30,13 +30,13 @@ export const metadata: Metadata = {
     siteName: "Isaque dos Santos",
     title: "Isaque dos Santos — Desenvolvedor Full-Stack",
     description:
-      "Portfólio de Isaque Claudino dos Santos, desenvolvedor full-stack em Colombo, Paraná. Projetos, tecnologias e contato.",
+      "Portfólio de Isaque Claudino dos Santos, desenvolvedor full-stack em Curitiba, Paraná. Projetos, tecnologias e contato.",
   },
   twitter: {
     card: "summary",
     title: "Isaque dos Santos — Desenvolvedor Full-Stack",
     description:
-      "Portfólio de Isaque Claudino dos Santos, desenvolvedor full-stack em Colombo, Paraná. Projetos, tecnologias e contato.",
+      "Portfólio de Isaque Claudino dos Santos, desenvolvedor full-stack em Curitiba, Paraná. Projetos, tecnologias e contato.",
   },
   robots: {
     index: true,

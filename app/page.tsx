@@ -144,7 +144,7 @@ export default function Home() {
             <div className="eyebrow hero-eyebrow">
               <span className="status-dot" />
               DESENVOLVEDOR FULL-STACK <span className="eyebrow-slash">/</span>{" "}
-              COLOMBO, PR
+              CURITIBA, PR
             </div>
             <h1 id="hero-title">
               Ideias em código.
@@ -623,7 +623,7 @@ export default function Home() {
           </span>
           <span>isaque<span className="wordmark-dot">®</span></span>
         </a>
-        <p>Feito com intenção, em Colombo — PR.</p>
+        <p>Feito com intenção, em Curitiba — PR.</p>
         <a className="back-to-top" href="#inicio">
           Voltar ao topo <ArrowUpRight />
         </a>
