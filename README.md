@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfólio — Isaque dos Santos
 
-## Getting Started
+Portfólio pessoal desenvolvido com Next.js e exportação estática.
 
-First, run the development server:
+## Desenvolvimento local
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build estático
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+O site exportado fica na pasta `out/` e pode ser publicado em qualquer serviço
+de hospedagem estática.
 
-To learn more about Next.js, take a look at the following resources:
+## Publicação no GitHub Pages
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+O workflow `.github/workflows/deploy.yml` executa lint, gera o site estático e
+publica automaticamente a pasta `out/` no GitHub Pages a cada push para `main`.
+Também é possível iniciar a publicação manualmente pela aba **Actions**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Na primeira publicação, confira em **Settings → Pages** se a fonte de build
+está configurada como **GitHub Actions**.
 
-## Deploy on Vercel
+Para este repositório, a URL esperada é:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<https://isaque-claudino-dos-santos.github.io/portfolio/>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+O `basePath` do repositório é aplicado durante o build do GitHub Actions para
+que os arquivos estáticos e links funcionem no caminho do GitHub Pages.
