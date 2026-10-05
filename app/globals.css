@@ -122,6 +122,10 @@ a:focus-visible {
   gap: 5px;
   color: #bcb3c0;
   font-family: "Courier New", monospace;
+  grid-column: 1 / -1;
+  grid-row: 3;
+  justify-content: space-between;
+  gap: 10px;
   font-size: 12px;
 }
 
@@ -1125,6 +1129,201 @@ a:focus-visible {
   background: rgba(255, 255, 255, 0.018);
 }
 
+.experience-section {
+  border-block: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.018);
+}
+
+.experience-layout {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 9%;
+  padding-block: 108px;
+}
+
+.experience-heading h2 {
+  margin: 0;
+  font-size: clamp(42px, 5vw, 60px);
+  letter-spacing: -0.075em;
+  line-height: 1.03;
+}
+
+.experience-heading h2 span {
+  color: var(--pink);
+}
+
+.experience-intro {
+  max-width: 300px;
+  margin: 22px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.experience-list {
+  border-top: 1px solid var(--line);
+}
+
+.experience-card {
+  display: grid;
+  grid-template-columns: 145px 1fr;
+  gap: 25px;
+  padding-block: 27px;
+  border-bottom: 1px solid var(--line);
+}
+
+.experience-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  padding-top: 4px;
+}
+
+.experience-index {
+  color: var(--pink);
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+}
+
+.experience-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #d1c7d4;
+  font-family: "Courier New", monospace;
+  font-size: 9px;
+  letter-spacing: 0.08em;
+}
+
+.experience-status .status-dot {
+  width: 6px;
+  height: 6px;
+}
+
+.experience-details {
+  min-width: 0;
+}
+
+.experience-company {
+  margin: 0 0 7px;
+  color: var(--acid);
+  font-family: "Courier New", monospace;
+  font-size: 10px;
+  letter-spacing: 0.03em;
+}
+
+.experience-details h3 {
+  margin: 0;
+  font-size: 21px;
+  letter-spacing: -0.04em;
+}
+
+.experience-details > p:not(.experience-company) {
+  margin: 12px 0 0;
+  color: #bcb3c0;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.experience-details .project-chips {
+  margin-top: 17px;
+}
+
+.ai-section {
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(ellipse at 88% 48%, rgba(216, 255, 117, 0.055), transparent 34%),
+    var(--background);
+}
+
+.ai-layout {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 10%;
+  padding-block: 108px;
+}
+
+.ai-heading h2 {
+  margin: 0;
+  font-size: clamp(42px, 4.9vw, 59px);
+  letter-spacing: -0.075em;
+  line-height: 1.04;
+}
+
+.ai-heading h2 span {
+  color: var(--pink);
+}
+
+.ai-intro {
+  max-width: 410px;
+  margin: 23px 0 0;
+  color: #c1b8c5;
+  font-size: 14px;
+  line-height: 1.85;
+}
+
+.ai-principles {
+  border-top: 1px solid var(--line);
+}
+
+.ai-principle {
+  display: grid;
+  grid-template-columns: 38px 1fr;
+  gap: 16px;
+  padding-block: 22px;
+  border-bottom: 1px solid var(--line);
+}
+
+.ai-index {
+  padding-top: 3px;
+  color: var(--pink);
+  font-family: "Courier New", monospace;
+  font-size: 10px;
+}
+
+.ai-principle h3 {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+}
+
+.ai-principle p {
+  max-width: 510px;
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.ai-statement {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 22px;
+  padding: 17px 19px;
+  border: 1px solid rgba(216, 255, 117, 0.22);
+  background: rgba(216, 255, 117, 0.045);
+}
+
+.ai-statement-mark {
+  color: var(--acid);
+  font-size: 24px;
+}
+
+.ai-statement p {
+  margin: 0;
+  color: #d7cfda;
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+.ai-statement strong {
+  color: var(--acid);
+  font-weight: 600;
+}
+
 .about-layout {
   display: grid;
   grid-template-columns: 0.95fr 1.05fr;
@@ -1439,6 +1638,32 @@ a:focus-visible {
     width: min(100% - 56px, 740px);
   }
 
+  .site-header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 14px;
+    padding-block: 15px;
+  }
+
+  .main-nav {
+    justify-content: center;
+    gap: 12px;
+    font-size: 10px;
+  }
+
+  .header-contact {
+    grid-column: 1 / -1;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 22px;
+  }
+
+  .header-cta {
+    gap: 7px;
+    padding-inline: 12px;
+    font-size: 11px;
+  }
+
   .hero {
     min-height: 640px;
     grid-template-columns: 1fr 0.9fr;
@@ -1494,11 +1719,15 @@ a:focus-visible {
   .main-nav {
     grid-column: 1;
     grid-row: 2;
-    gap: 16px;
-    font-size: 11px;
+    gap: 12px;
+    font-size: 10px;
   }
 
   .main-nav a:nth-child(2) {
+    display: none;
+  }
+
+  .main-nav a:nth-child(4) {
     display: none;
   }
 
@@ -1699,8 +1928,93 @@ a:focus-visible {
     padding-block: 78px;
   }
 
+  .experience-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-block: 78px;
+  }
+
+  .experience-intro {
+    max-width: 440px;
+  }
+
+  .ai-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    padding-block: 78px;
+  }
+
+  .ai-heading h2 {
+    font-size: clamp(42px, 10vw, 59px);
+  }
+
+  .experience-card {
+    grid-template-columns: 110px 1fr;
+    gap: 18px;
+  }
+
+  .experience-meta {
+    gap: 11px;
+  }
+
   .about-link {
     margin-top: 24px;
+  }
+
+  .experience-layout {
+    gap: 29px;
+    padding-block: 74px;
+  }
+
+  .ai-layout {
+    gap: 29px;
+    padding-block: 74px;
+  }
+
+  .ai-heading h2 {
+    font-size: clamp(40px, 9.5vw, 54px);
+  }
+
+  .ai-intro {
+    font-size: 13px;
+  }
+
+  .ai-principle {
+    grid-template-columns: 30px 1fr;
+    gap: 12px;
+    padding-block: 18px;
+  }
+
+  .ai-principle h3 {
+    font-size: 13px;
+  }
+
+  .ai-principle p {
+    font-size: 12px;
+  }
+
+  .experience-heading h2 {
+    font-size: clamp(42px, 10vw, 59px);
+  }
+
+  .experience-card {
+    grid-template-columns: 1fr;
+    gap: 13px;
+    padding-block: 22px;
+  }
+
+  .experience-meta {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .experience-details h3 {
+    font-size: 19px;
+  }
+
+  .experience-details > p:not(.experience-company) {
+    font-size: 12px;
   }
 
   .about-copy {

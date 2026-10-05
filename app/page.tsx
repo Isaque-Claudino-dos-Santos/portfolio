@@ -108,6 +108,8 @@ export default function Home() {
 
         <nav className="main-nav" aria-label="Navegação principal">
           <a href="#projetos">Projetos</a>
+          <a href="#experiencia">Experiência</a>
+          <a href="#ia">IA &amp; agilidade</a>
           <a href="#sobre">Sobre mim</a>
           <a href="#contato">Contato</a>
         </nav>
@@ -153,9 +155,11 @@ export default function Home() {
               </a>
               <a
                 className="button button-quiet"
-                href="mailto:isaqueclaudino12@gmail.com"
+                href="https://wa.me/5541987929277?text=Ol%C3%A1%2C%20Isaque!%20Encontrei%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar."
+                target="_blank"
+                rel="noreferrer"
               >
-                Entre em contato <ArrowUpRight />
+                Fale comigo no WhatsApp <ArrowUpRight />
               </a>
             </div>
             <div className="hero-footnote">
@@ -333,13 +337,161 @@ export default function Home() {
         </section>
 
         <section
+          className="experience-section"
+          id="experiencia"
+          aria-labelledby="experience-title"
+        >
+          <div className="page-width experience-layout">
+            <div className="experience-heading">
+              <p className="eyebrow section-eyebrow">
+                02 / EXPERIÊNCIA PROFISSIONAL
+              </p>
+              <h2 id="experience-title">
+                Código com
+                <br />
+                <span>propósito real.</span>
+              </h2>
+              <p className="experience-intro">
+                Experiência construindo produtos web, integrações e soluções
+                para desafios de negócio.
+              </p>
+            </div>
+
+            <div className="experience-list">
+              <article className="experience-card">
+                <div className="experience-meta">
+                  <span className="experience-index">01</span>
+                  <span className="experience-status">
+                    <span className="status-dot" /> ATUAL
+                  </span>
+                </div>
+                <div className="experience-details">
+                  <p className="experience-company">Setup Tecnologia · Curitiba, PR</p>
+                  <h3>Desenvolvedor Full-Stack</h3>
+                  <p>
+                    Desenvolvimento de sistema jurídico com Laravel e Vue.js.
+                    Liderei a implementação da versão 2 do produto, contribuindo
+                    para a reestruturação da arquitetura e das APIs REST com
+                    princípios SOLID.
+                  </p>
+                  <p>
+                    Também trabalhei em integrações com Pagar.me e Twilio, na
+                    evolução contínua do produto e no crescimento técnico da
+                    equipe.
+                  </p>
+                  <ul className="project-chips" aria-label="Tecnologias utilizadas">
+                    <li>Laravel</li>
+                    <li>Vue.js</li>
+                    <li>REST API</li>
+                    <li>Pagar.me</li>
+                    <li>Twilio</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article className="experience-card">
+                <div className="experience-meta">
+                  <span className="experience-index">02</span>
+                  <span className="experience-status">EXPERIÊNCIA ANTERIOR</span>
+                </div>
+                <div className="experience-details">
+                  <p className="experience-company">Aftersale · Curitiba, PR</p>
+                  <h3>Desenvolvedor Full-Stack</h3>
+                  <p>
+                    Desenvolvimento de sistema de trocas e devoluções para
+                    e-commerce, com integrações REST com VTEX, Pagar.me e
+                    Correios.
+                  </p>
+                  <p>
+                    Atuei com Laravel e React, testes automatizados com TDD e
+                    documentação técnica, aplicando padrões de projeto e
+                    princípios SOLID.
+                  </p>
+                  <ul className="project-chips" aria-label="Tecnologias utilizadas">
+                    <li>Laravel</li>
+                    <li>React</li>
+                    <li>VTEX</li>
+                    <li>Pagar.me</li>
+                    <li>Correios</li>
+                    <li>TDD</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section className="ai-section" id="ia" aria-labelledby="ai-title">
+          <div className="page-width ai-layout">
+            <div className="ai-heading">
+              <p className="eyebrow section-eyebrow">
+                03 / DESENVOLVIMENTO COM INTELIGÊNCIA ARTIFICIAL
+              </p>
+              <h2 id="ai-title">
+                IA para acelerar.
+                <br />
+                <span>Critério para entregar.</span>
+              </h2>
+              <p className="ai-intro">
+                Uso inteligência artificial como parceira de desenvolvimento
+                para otimizar etapas do trabalho e ganhar agilidade sem abrir
+                mão da qualidade.
+              </p>
+            </div>
+
+            <div className="ai-principles">
+              <article className="ai-principle">
+                <span className="ai-index">01</span>
+                <div>
+                  <h3>Mais foco no que importa</h3>
+                  <p>
+                    A IA pode ajudar a explorar soluções, estruturar tarefas e
+                    acelerar atividades repetitivas — liberando tempo para
+                    pensar no problema e na arquitetura.
+                  </p>
+                </div>
+              </article>
+              <article className="ai-principle">
+                <span className="ai-index">02</span>
+                <div>
+                  <h3>Entrega com responsabilidade</h3>
+                  <p>
+                    Uso as sugestões como ponto de partida: analiso o contexto,
+                    reviso o código e valido o resultado antes de integrar ao
+                    produto.
+                  </p>
+                </div>
+              </article>
+              <article className="ai-principle">
+                <span className="ai-index">03</span>
+                <div>
+                  <h3>Velocidade sem perder qualidade</h3>
+                  <p>
+                    A ferramenta apoia o processo; decisões técnicas,
+                    entendimento do negócio e responsabilidade pela entrega
+                    continuam sendo meus.
+                  </p>
+                </div>
+              </article>
+              <div className="ai-statement">
+                <span className="ai-statement-mark">✳</span>
+                <p>
+                  Tecnologia acelera o caminho. <strong>O cuidado com a
+                  entrega continua humano.</strong>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
           className="about-section"
           id="sobre"
           aria-labelledby="about-title"
         >
           <div className="page-width about-layout">
             <div className="about-heading">
-              <p className="eyebrow section-eyebrow">02 / UM POUCO SOBRE MIM</p>
+              <p className="eyebrow section-eyebrow">04 / UM POUCO SOBRE MIM</p>
               <h2 id="about-title">
                 Gosto de pensar.
                 <br />
@@ -393,7 +545,7 @@ export default function Home() {
           aria-labelledby="skills-title"
         >
           <div>
-            <p className="eyebrow section-eyebrow">03 / FERRAMENTAS DO OFÍCIO</p>
+            <p className="eyebrow section-eyebrow">05 / FERRAMENTAS DO OFÍCIO</p>
             <h2 id="skills-title">Meu stack, sem mistério.</h2>
           </div>
           <ul className="skills-list">
@@ -407,7 +559,7 @@ export default function Home() {
           <div className="contact-card">
             <div className="contact-glow" aria-hidden="true" />
             <div className="contact-content">
-              <p className="eyebrow contact-eyebrow">04 / SUA PRÓXIMA IDEIA COMEÇA AQUI</p>
+              <p className="eyebrow contact-eyebrow">06 / SUA PRÓXIMA IDEIA COMEÇA AQUI</p>
               <h2>
                 Tem um desafio?
                 <br />
