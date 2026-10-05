@@ -224,8 +224,8 @@ export default function Home() {
 
         <div className="ticker" aria-label="Tecnologias: PHP, React, Laravel e APIs">
           <div className="ticker-track">
-            {[0, 1].map((copy) => (
-              <span className="ticker-group" key={copy} aria-hidden={copy === 1}>
+            {Array.from({ length: 8 }, (_, copy) => (
+              <span className="ticker-group" key={copy} aria-hidden={copy > 0}>
                 <span>PHP</span><i>✳</i><span>REACT</span><i>✳</i>
                 <span>LARAVEL</span><i>✳</i><span>APIs REST</span><i>✳</i>
                 <span>TYPESCRIPT</span><i>✳</i><span>NODE.JS</span><i>✳</i>
@@ -432,17 +432,17 @@ export default function Home() {
           <div className="page-width ai-layout">
             <div className="ai-heading">
               <p className="eyebrow section-eyebrow">
-                03 / DESENVOLVIMENTO COM INTELIGÊNCIA ARTIFICIAL
+                03 / ARQUITETURA, BOAS PRÁTICAS E INTELIGÊNCIA ARTIFICIAL
               </p>
               <h2 id="ai-title">
-                IA para acelerar.
+                IA com direção.
                 <br />
-                <span>Critério para entregar.</span>
+                <span>Arquitetura para evoluir.</span>
               </h2>
               <p className="ai-intro">
-                Uso inteligência artificial como parceira de desenvolvimento
-                para otimizar etapas do trabalho e ganhar agilidade sem abrir
-                mão da qualidade.
+                Arquitetura bem pensada, boas práticas e IA trabalham juntas:
+                padrões de projeto dão estrutura ao código, enquanto a IA ajuda
+                a explorar soluções e acelerar o desenvolvimento com qualidade.
               </p>
             </div>
 
@@ -450,41 +450,40 @@ export default function Home() {
               <article className="ai-principle">
                 <span className="ai-index">01</span>
                 <div>
-                  <h3>Mais foco no que importa</h3>
+                  <h3>Arquitetura antes da pressa</h3>
                   <p>
-                    A IA pode ajudar a explorar soluções, estruturar tarefas e
-                    acelerar atividades repetitivas — liberando tempo para
-                    pensar no problema e na arquitetura.
+                    Entender o domínio e definir responsabilidades claras cria
+                    uma base sustentável para evoluir o produto, com ou sem IA.
                   </p>
                 </div>
               </article>
               <article className="ai-principle">
                 <span className="ai-index">02</span>
                 <div>
-                  <h3>Entrega com responsabilidade</h3>
+                  <h3>Padrões que mantêm consistência</h3>
                   <p>
-                    Uso as sugestões como ponto de partida: analiso o contexto,
-                    reviso o código e valido o resultado antes de integrar ao
-                    produto.
+                    Princípios SOLID, padrões de projeto e convenções do time
+                    tornam o código mais legível, testável e simples de manter.
                   </p>
                 </div>
               </article>
               <article className="ai-principle">
                 <span className="ai-index">03</span>
                 <div>
-                  <h3>Velocidade sem perder qualidade</h3>
+                  <h3>IA como parceira, com revisão humana</h3>
                   <p>
-                    A ferramenta apoia o processo; decisões técnicas,
-                    entendimento do negócio e responsabilidade pela entrega
-                    continuam sendo meus.
+                    Uso sugestões de IA com contexto e senso crítico: reviso,
+                    testo e valido cada mudança para garantir que respeite a
+                    arquitetura e resolva o problema certo.
                   </p>
                 </div>
               </article>
               <div className="ai-statement">
                 <span className="ai-statement-mark">✳</span>
                 <p>
-                  Tecnologia acelera o caminho. <strong>O cuidado com a
-                  entrega continua humano.</strong>
+                  IA acelera o desenvolvimento.{" "}
+                  <strong>Boas decisões de arquitetura e engenharia sustentam
+                  a entrega.</strong>
                 </p>
               </div>
             </div>
