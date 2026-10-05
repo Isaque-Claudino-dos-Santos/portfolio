@@ -127,7 +127,9 @@ export default function Home() {
           target="_blank"
           rel="noreferrer"
         >
-          Vamos conversar no LinkedIn <ArrowUpRight />
+          <span className="header-cta-label">Vamos conversar no LinkedIn</span>
+          <span className="header-cta-label-mobile">Vamos conversar</span>
+          <ArrowUpRight />
         </a>
       </header>
 
@@ -619,6 +621,14 @@ export default function Home() {
           Voltar ao topo <ArrowUpRight />
         </a>
       </footer>
+
+      <a
+        className="resume-fab"
+        href="curriculo-isaque-claudino-dos-santos.pdf"
+        download="curriculo-isaque-claudino-dos-santos.pdf"
+      >
+        Baixar currículo <ArrowDown />
+      </a>
     </>
   );
 }

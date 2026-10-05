@@ -160,6 +160,10 @@ a:focus-visible {
   font-size: 13px;
 }
 
+.header-cta-label-mobile {
+  display: none;
+}
+
 .header-cta:hover {
   transform: translateY(-2px);
   border-color: var(--acid);
@@ -1574,6 +1578,47 @@ a:focus-visible {
   height: 13px;
 }
 
+.resume-fab {
+  position: fixed;
+  z-index: 10;
+  right: max(24px, env(safe-area-inset-right));
+  bottom: max(24px, env(safe-area-inset-bottom));
+  display: inline-flex;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 20px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 999px;
+  background: var(--acid);
+  box-shadow:
+    0 0 0 4px rgba(216, 255, 117, 0.08),
+    0 0 24px rgba(216, 255, 117, 0.46),
+    0 10px 32px rgba(0, 0, 0, 0.3);
+  color: #17131a;
+  font-size: 13px;
+  font-weight: 700;
+  transition:
+    background-color 180ms ease,
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.resume-fab:hover {
+  transform: translateY(-3px);
+  background: #e8ffac;
+  box-shadow:
+    0 0 0 5px rgba(216, 255, 117, 0.12),
+    0 0 30px rgba(216, 255, 117, 0.62),
+    0 14px 38px rgba(0, 0, 0, 0.38);
+}
+
+.resume-fab .icon-arrow-down {
+  width: 17px;
+  height: 17px;
+}
+
 @keyframes enter-up {
   from {
     transform: translateY(20px);
@@ -1717,18 +1762,23 @@ a:focus-visible {
   }
 
   .main-nav {
-    grid-column: 1;
+    grid-column: 1 / -1;
     grid-row: 2;
-    gap: 12px;
+    justify-content: flex-start;
+    gap: 18px;
+    overflow-x: auto;
+    padding: 2px 2px 5px;
     font-size: 10px;
+    scrollbar-width: none;
   }
 
-  .main-nav a:nth-child(2) {
+  .main-nav::-webkit-scrollbar {
     display: none;
   }
 
-  .main-nav a:nth-child(4) {
-    display: none;
+  .main-nav a {
+    flex: none;
+    white-space: nowrap;
   }
 
   .header-cta {
@@ -1736,17 +1786,37 @@ a:focus-visible {
     grid-row: 1;
     min-height: 36px;
     gap: 5px;
-    padding-inline: 11px;
-    font-size: 11px;
+    padding-inline: 10px;
+    font-size: 10px;
+  }
+
+  .header-cta-label {
+    display: none;
+  }
+
+  .header-cta-label-mobile {
+    display: inline;
   }
 
   .header-contact {
     grid-column: 1 / -1;
     grid-row: 3;
     flex-direction: row;
-    justify-content: space-between;
-    gap: 10px;
-    font-size: 12px;
+    justify-content: flex-start;
+    gap: 16px;
+    overflow: hidden;
+    font-size: 10px;
+  }
+
+  .header-contact a:first-child {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .header-contact a:last-child {
+    flex: none;
   }
 
   .header-cta .icon-arrow {
@@ -2118,16 +2188,9 @@ a:focus-visible {
     width: calc(100% - 32px);
   }
 
-  .main-nav {
-    gap: 11px;
-  }
-
   .header-contact {
-    font-size: 10px;
-  }
-
-  .main-nav a:first-child {
-    display: none;
+    gap: 12px;
+    font-size: 9px;
   }
 
   .hero h1 {
