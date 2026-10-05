@@ -1,3 +1,6 @@
+import Image from "next/image";
+import foxIcon from "./icon.png";
+
 const projects = [
   {
     number: "01",
@@ -102,7 +105,9 @@ export default function Home() {
     <>
       <header className="site-header">
         <a className="wordmark" href="#inicio" aria-label="Isaque, início">
-          <span className="wordmark-mark">i.</span>
+          <span className="wordmark-mark">
+            <Image src={foxIcon} alt="" className="fox-mark" unoptimized />
+          </span>
           <span>isaque<span className="wordmark-dot">®</span></span>
         </a>
 
@@ -613,7 +618,9 @@ export default function Home() {
 
       <footer className="site-footer page-width">
         <a className="wordmark footer-wordmark" href="#inicio">
-          <span className="wordmark-mark">i.</span>
+          <span className="wordmark-mark">
+            <Image src={foxIcon} alt="" className="fox-mark" unoptimized />
+          </span>
           <span>isaque<span className="wordmark-dot">®</span></span>
         </a>
         <p>Feito com intenção, em Colombo — PR.</p>
