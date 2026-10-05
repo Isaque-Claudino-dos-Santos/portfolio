@@ -592,39 +592,6 @@ a:focus-visible {
   color: var(--pink);
 }
 
-.ticker {
-  overflow: hidden;
-  border-block: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.018);
-}
-
-.ticker-track {
-  display: flex;
-  width: max-content;
-  animation: ticker-scroll 55s linear infinite;
-}
-
-.ticker-group {
-  display: flex;
-  flex: none;
-  min-height: 67px;
-  align-items: center;
-  gap: 27px;
-  padding-inline: 25px;
-  color: #c9c0cd;
-  font-family: "Courier New", monospace;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.15em;
-  white-space: nowrap;
-}
-
-.ticker-group i {
-  color: var(--pink);
-  font-size: 15px;
-  font-style: normal;
-}
-
 .section-pad {
   padding-block: 123px 126px;
 }
@@ -1401,6 +1368,14 @@ a:focus-visible {
   letter-spacing: -0.06em;
 }
 
+.skills-intro {
+  max-width: 350px;
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.75;
+}
+
 .skills-list {
   gap: 10px;
 }
@@ -1659,12 +1634,6 @@ a:focus-visible {
   }
 }
 
-@keyframes ticker-scroll {
-  to {
-    transform: translateX(-12.5%);
-  }
-}
-
 @keyframes cursor-blink {
   to {
     visibility: hidden;
@@ -1916,12 +1885,6 @@ a:focus-visible {
     display: none;
   }
 
-  .ticker-group {
-    min-height: 56px;
-    gap: 20px;
-    font-size: 9px;
-  }
-
   .section-pad {
     padding-block: 82px 88px;
   }
@@ -2100,6 +2063,11 @@ a:focus-visible {
 
   .skills-section h2 {
     font-size: 30px;
+  }
+
+  .skills-intro {
+    max-width: 440px;
+    font-size: 12px;
   }
 
   .skills-list {

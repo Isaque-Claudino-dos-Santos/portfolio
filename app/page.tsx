@@ -66,12 +66,25 @@ const skills = [
   "Laravel",
   "Node.js",
   "React",
+  "Vue.js",
+  "Next.js",
   "TypeScript",
   "JavaScript",
   "Java",
+  "HTML",
+  "CSS",
   "SQL & NoSQL",
   "AWS",
   "APIs REST",
+  "VTEX",
+  "Pagar.me",
+  "Twilio",
+  "Correios",
+  "Git & GitHub",
+  "npm",
+  "TDD",
+  "SOLID",
+  "Padrões de projeto",
 ];
 
 function ArrowUpRight() {
@@ -221,18 +234,6 @@ export default function Home() {
             <ArrowDown />
           </a>
         </section>
-
-        <div className="ticker" aria-label="Tecnologias: PHP, React, Laravel e APIs">
-          <div className="ticker-track">
-            {Array.from({ length: 8 }, (_, copy) => (
-              <span className="ticker-group" key={copy} aria-hidden={copy > 0}>
-                <span>PHP</span><i>✳</i><span>REACT</span><i>✳</i>
-                <span>LARAVEL</span><i>✳</i><span>APIs REST</span><i>✳</i>
-                <span>TYPESCRIPT</span><i>✳</i><span>NODE.JS</span><i>✳</i>
-              </span>
-            ))}
-          </div>
-        </div>
 
         <section
           className="projects-section page-width section-pad"
@@ -551,8 +552,14 @@ export default function Home() {
           aria-labelledby="skills-title"
         >
           <div>
-            <p className="eyebrow section-eyebrow">05 / FERRAMENTAS DO OFÍCIO</p>
-            <h2 id="skills-title">Meu stack, sem mistério.</h2>
+            <p className="eyebrow section-eyebrow">
+              05 / TECNOLOGIAS E PRÁTICAS
+            </p>
+            <h2 id="skills-title">Tecnologias que domino.</h2>
+            <p className="skills-intro">
+              Linguagens, frameworks, plataformas e práticas presentes nos
+              meus projetos e na minha experiência profissional.
+            </p>
           </div>
           <ul className="skills-list">
             {skills.map((skill) => (
