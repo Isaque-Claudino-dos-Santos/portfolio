@@ -370,7 +370,7 @@ export default function Home() {
                 <div className="experience-meta">
                   <span className="experience-index">01</span>
                   <span className="experience-status">
-                    <span className="status-dot" /> ATUAL
+                    <span className="experience-status">EXPERIÊNCIA ANTERIOR</span>
                   </span>
                 </div>
                 <div className="experience-details">
